@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block header %}
+  <h1>{% block title %}New League{% endblock %}</h1>
+{% endblock %}
+
+{% block content %}
+  <form method="post">
+    <label for="league_name">League Name</label>
+    <input name="league_name" id="league_name" required>
+  </form>
+{% endblock %}

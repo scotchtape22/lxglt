@@ -1,0 +1,152 @@
+{% extends 'base.html' %}
+
+{% block header %}
+  <h2>{% block title %}Rules{% endblock %}</h2>
+  {% if g.user %}
+  {% endif %}
+{% endblock %}
+
+{% block content %}
+    <article class="post">
+      <header>
+      </header>
+      <div>
+        <h2>Intro</h2>
+        <p class="body">
+        My name is <i>Lance Xyler!</i>  The greatest Lazer Tag gunner in the history of the sport!  In this internet simulation, you will manage a team to the heights of Lazer Tag glory against your friends.
+        </p>
+
+        <h2>Lazer Tag</h2>
+        <p class="body">
+        In a game of laser tag, 2 teams field 8 players each.  For 4 quarters of 8 rounds each, these players will score points by hitting shooting each other (1 point) or attacking each other's core tower (worth 4 points).  The team with the most points at the end of the game is victorious.
+        </p>
+
+        <h2>Your Roster</h2>
+        <p class="body">
+        Each team will have up to 36 players on their roster.
+          <ul>
+            <li><b>8 Starting Players</b> - Your go to players on most plays</li>
+            <li><b>16 Substitute Players</b> - Can be swapped in for special tactics or in case of injury</li>
+            <li><b>4 Scratched Players</b> - Players on the roster who are currently injured, in rehab, or just not needed for play</li>
+            <li><b>8 Minor League Players</b> - Players playing in the minor league to develop skills</li>
+          </ul>
+        </p>
+
+        <h2>Your Players</h2>
+        <p class="body">
+        Each player has several different stats.
+          <ul>
+            <li><b>Accuracy</b>- A player's shooting ability</li>
+            <li><b>Evasion</b>- A player's dodging ability</li>
+            <li><b>Initative</b>- How quick a player acts each round</li>
+            <li><b>Physique</b>- A player's ability to avoid injury</li>
+            <li><b>Potential</b>- A player's ability to learn more and level up</li>
+            <li><b>Knowledge</b>- A player's general knowledge of Lazer Tag and ability to share it with others</li>
+            <li><b>Ego</b>- A player's knowledge of how good they are, Lance Xyler knows this well.</li>
+          </ul>
+        </p>
+        <p class="body">
+          Players stats can be <i>amplified,</i> which increases their variability <i>nullified</i> which decreases their variability, or <i>modified</i> which changes their value.  Along with this, player's will have a hometown, age, injuries, and relationships, some of these might come into play, some of them might now.  That's not for Lance Xyler to say.
+        </p>
+        <p class="body">
+          No player plays for free, you will have to sign each player to a contract.
+          <ul>
+            <li><b>Game Salary</b>- How much this player is paid per game.</li>
+            <li><b>Bonuses</b>- Bonueses for reachinng certain milestones either as a team or as an individual player.</li>
+            <li><b>Contract Term</b>- How long the contract lasts for.</li>
+            <li><b>Contract Type</b>- What type of contract that this is:  </li>
+                 <ul>
+                    <li><b>Assistant Coach</b>- Player serves as a specific type of coach, see "Office" for more details.</li>
+                    <li><b>Franchise</b>- Player doesn't count towards your salary cap, cannot be traded, must be a starter, limit 3.</li>
+                    <li><b>Standard</b>- Player is a regular part of the team, and must always be on the professional team, limit 28.</li>
+                    <li><b>2-Way</b>- Player can be a part of the profession or minor league team, limit 8.</li>
+                    <li><b>Minor League</b>- Player can only be part of the minor league team, does not count towards salary cap, limit 8</li>
+                </ul>
+          </ul>
+        </p>
+        <p class="body">
+          Along with this, player's will have a hometown, age, injuries, and relationships, some of these might come into play, some of them might not.  That's not for Lance Xyler to say.
+        </p>
+
+        <h2>Your Game Plan</h2>
+        <p class="body">
+          Before each game, you will come up with plans for how to perform in the line of fire, there are 3 major parts to this.  First are your strategies.
+        </p>
+        <h4>Strategy</h4>
+        <p class="body">
+          You can set up between 1 and 5 strategies, each tactic has a <i>preference</i> that will help you determine how often it is used.  For each strategy, your 8 starters will have a choice of tactic:
+            <ul>
+              <li><b>Charge</b>- Amplify your initative, nullify your accuracy.</li>
+              <li><b>Camp</b>- Amplify your evasion, nullify your initiative.</li>
+              <li><b>Assault</b>- Amplify your accuracy, nullify your evasion.</li>
+              <li><b>Free Fire</b>- Take an extra shots. Slightly decrease all stats.</li>
+              <li><b>Flank</b>- Attempt to rush your opponents control tower.</li>
+              <li><b>Ambush</b>- Attack player's attempting to rush your tower.</li>
+            </ul>
+        </p>
+        <h4>Depth Chart</h4>
+        <p class="body">
+            Players are set to different parts of the roster (bench, starter, scratch, minor leagues).  For benched players on each strategy, they choose a player to sub for in case this starter must leave the game early.
+        </p>
+        <h4>Enhancements</h4>
+        <p class="body">
+          Certainly Lance Xyler would never stoop to such low levels, but if you find that a player must be given an extra edge to help their game, you can provide them with a pick me up:
+            <ul>
+              <li><b>Marijuana</b>- Increase evasion.</li>
+              <li><b>Adderall</b>- Increase accuracy.</li>
+              <li><b>Cocaine</b>- Increase intiative.</li>
+              <li><b>Steroids</b>- Increase physique.</li>
+              <li><b>Entropy Nachos</b>- Senor Azimov's Entropy Nachos are the perfect snack for increases randomness.</li>
+              <li><b>Blu Vihm</b>- Calms down and mellows out a player to keep them from having too chaotic of a game.</li>
+            </ul>
+        <i>LXGLTC and GLGL do not advocate for the use of illegal substances.  Please use mind altering substances responsibly.</i>
+        </p>
+
+        <h2>Your Office and Budget</h2>
+        <p class="body">
+          Along with the roster, you will have to manage the budget of your team and its staff.
+        </p>
+        <h4>Staff</h4>
+        <p class="body">
+          Player's can be hired into assistant coaching roles, these usue knowledge to assist your team as a whole.
+            <ul>
+              <li><b>Mentors</b>- Help players level up, limit 2 (one for the pro team, one for the minor team).</li>
+              <li><b>Medics</b>- Help players heal injuries and addictions, limit 1.</li>
+              <li><b>Marketeer</b>- Helps you earn more cash, limit 1.</li>
+              <li><b>Scouts</b>- Used to scout players on other teams and minor league players, limit 3.</li>
+            </ul>
+        </p>
+        <h4>Stadium and Fan Experience</h4>
+        <p class="body">
+          Your stadium and fan experience will affect your income.  <i>Stadium Capacity</i> affects the maximum amount of money that can be collected during a match, <i>fan experience</i> affects the minimum amount of income.
+        </p>
+        <h4>Budget</h4>
+        <p class="body">
+          Each game is going to incure some operating costs and earn you profit.
+        <h4>Suppliers</h4>
+        <p class="body">
+          Player's can be hired into assistant coaching roles, these usue knowledge to assist your team as a whole.
+            <ul>
+              <li><b>Mentors</b>- Help players level up, limit 2 (one for the pro team, one for the minor team).</li>
+              <li><b>Medics</b>- Help players heal injuries and addictions, limit 1.</li>
+              <li><b>Marketeer</b>- Helps you earn more cash, limit 1.</li>
+              <li><b>Scouts</b>- Used to scout players on other teams and minor league players, limit 3.</li>
+            </ul>
+        </p>
+
+        <h2>Running a League</h2>
+        <p class="body">
+          Leagues will have a number of settings, including:
+            <ul>
+              <li>Number of teams (4-24)</li>
+              <li>Number of games (short, medium, long) seasons</li>
+              <li>Number of playoff teams</li>
+              <li>Salary cap</li>
+            </ul>
+        </p>
+
+      </div>
+
+
+    </article>
+{% endblock %}
